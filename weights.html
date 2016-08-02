@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <meta charset='utf-8' />
+
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <title>权重测试</title>
+    <style type="text/css">
+        html {
+            font-size: 14px;
+        }
+        
+        li {
+            line-height: 1.8rem;
+            padding: 5px 10px;
+            border-bottom: solid 1px #ddd;
+        }
+        
+        .title {
+            color: #777;
+        }
+        
+        .weight {
+            color: red;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+        
+        .form {
+            border: solid 1px #ddd;
+            padding: 5px 8px;
+            border-radius: 5px;
+            background: #eee;
+        }
+        
+        label {
+            width: 160px;
+            display: inline-block;
+        }
+        button{
+            padding: 8px 16px; background: green;color: #fff;border: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>权值模拟测试(<small style="color:red">各项权值的和应该 = 1</small>)</h2>
+    
+    <div class="form">
+        <!--<label for="">评论数权重(取值0~1之间)</label>
+        <input type="text" id="commentsWeight" value="1">
+        <label for="">生命周期权重</label>
+        <input type="text" id="modifyDateWeight" value="0" readonly>
+
+        <button type="button" id="rebuild">计算</button>-->
+    </div>
+    <div id="momentsList">
+        <h2>加载中...</h2>
+    </div>
+
+    <script src="jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="moment-with-langs.min.js"></script>
+    <script type="text/javascript" src="number-ex.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="weights.js"></script>
+</body>
+
+</html>
